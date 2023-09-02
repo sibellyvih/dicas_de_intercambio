@@ -2,9 +2,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  color: black;
+  background: white;
 }
 
 header {
@@ -59,7 +58,12 @@ h2 {
 }
 
 p {
-  padding: 40px 0;
+  padding: 40px;
+}
+
+main {
+  padding: 80px;
+  font-size: 20px;
 }
 
 img {
@@ -101,15 +105,11 @@ footer {
     animation: titleEntrance 1s forwards; /* Animação de entrada */
 }
 
-.rodape {
-  padding: 300px 0;
-  text-align: center;
-  background: rgb(50, 48, 96);
-  color: white;
-}
-
  .depoimentos {
   font-size: 25px;
+  color: white;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
  }
 
 .content {
@@ -126,6 +126,18 @@ footer {
 .name {
 font-size: 25px;
 text-align: right;
+}
+
+.parte-final {
+  padding: 80px;
+  font-size: 20px;
+}
+
+.rodape {
+  padding: 200px 0;
+  text-align: center;
+  background: rgb(50, 48, 96);
+  color: white;
 }
 
 .rodape img {
