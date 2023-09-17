@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
@@ -52,6 +52,11 @@ h1 {
     }
 }
 
+h2 {
+  text-align: center;
+  padding: 40px;
+}
+
 img {
     max-width: 500px;
     max-height: 450px;
@@ -68,8 +73,27 @@ img {
 
   p {
     padding: 40px 0;
+    font-size: 18px;
 }
 
 .destino {
     font-size: 20px;
+    padding: 30px;
+}
+
+.rodape {
+  padding: 100px 0;
+  text-align: center;
+  background: rgb(50, 48, 96);
+  color: white;
+}
+
+.rodape img {
+  max-height: 40px; /* Ajuste a altura da imagem */
+}
+
+.rodape .redes-sociais {
+  display: flex;
+  justify-content: center; /* Centralizar horizontalmente */
+  margin: 0 20px;
 }
