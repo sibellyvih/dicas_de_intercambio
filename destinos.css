@@ -30,11 +30,16 @@ nav li {
     margin: 0 0 0 15px;
 }
   
-  nav a {
+nav a {
     color: black;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(138, 59, 125);
+  text-decoration: underline;
 }
 
 h1 {
@@ -81,7 +86,8 @@ img {
 }
 
 .rodape {
-  padding: 100px 0;
+  font-size: 18px;
+  padding: 40px 0;
   text-align: center;
   background: rgb(50, 48, 96);
   color: white;
@@ -95,4 +101,11 @@ img {
   display: flex;
   justify-content: center; /* Centralizar horizontalmente */
   margin: 0 20px;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+  padding: 10px;
 }
