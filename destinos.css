@@ -80,6 +80,25 @@ img {
     font-size: 18px;
 }
 
+main p {
+  padding: 40px 0;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+main li {
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding: 40px;
+}
+
+main li:last-child {
+  border-bottom: 1px solid white;
+}
+
 .destino {
     font-size: 20px;
     padding: 30px;
