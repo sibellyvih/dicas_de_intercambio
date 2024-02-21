@@ -77,6 +77,14 @@ h2 {
     animation: titleEntrance 1s forwards; /* Animação de entrada */
 }
 
+.botao {
+  font-size: 20px;
+  color: black;
+ background-color: #8EC5FC;
+ border-color:#8EC5FC;
+ border-radius: 10px;
+}
+
 main p {
   font-size: 20px;
   text-align: center;
