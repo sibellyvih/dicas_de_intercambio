@@ -33,6 +33,7 @@
       <div class="beneficios">
       <h2>Os benefícios em fazer um intercâmbio</h2>
       <p>Fazer intercâmbio é uma experiência enriquecedora que envolve viver em um país estrangeiro por um período determinado, geralmente com o objetivo de estudar, trabalhar, aprender um novo idioma ou simplesmente mergulhar em uma cultura diferente. Essa experiência oferece uma série de benefícios pessoais, acadêmicos e profissionais. </p>
+      <br>
      
         <div class="botoes">
         <button class="botao">Aprendizado de Idiomas</button>
@@ -42,10 +43,33 @@
         <button class="botao">Experiências Inesquecíveis</button>
         <button class="botao">Visão Global</button>
       </div>
-        
+      
+      <br>
       <p>No entanto, é importante lembrar que o intercâmbio também pode ser desafiador. Você pode enfrentar dificuldades com o idioma, sentir saudades de casa, lidar com choque cultural e enfrentar obstáculos inesperados. No entanto, esses desafios também fazem parte do processo de crescimento e amadurecimento.</p>
     </div>
     </main>
+
+    <style>
+      /* Adicione algum estilo conforme necessário */
+      .depoimentos {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      .depoimentos blockquote {
+        display: none;
+      }
+  
+      .depoimentos blockquote.active {
+        display: block;
+      }
+  
+      .carousel-controls {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
 
        <div class="depoimentos">
       <h2>Depoimentos</h2>
@@ -92,7 +116,36 @@
       </div>
         <footer class="name">Sibelly Vitória Antonio</footer>
       </blockquote>
+      <div class="carousel-controls" onclick="changeDepoimento(-1)">&#10094;</div>
+      <div class="carousel-controls" onclick="changeDepoimento(1)">&#10095;</div>
       </div>
+
+      <script>
+        let currentIndex = 0;
+        const depoimentos = document.querySelectorAll('.depoimentos blockquote');
+      
+        function showDepoimento(index) {
+          // Certifique-se de que o índice não ultrapasse os limites
+          if (index < 0) {
+            currentIndex = depoimentos.length - 1;
+          } else if (index >= depoimentos.length) {
+            currentIndex = 0;
+          }
+      
+          // Oculta todos os depoimentos
+          depoimentos.forEach(dep => dep.classList.remove('active'));
+      
+          // Exibe apenas o depoimento com o índice atual
+          depoimentos[currentIndex].classList.add('active');
+        }
+      
+        function changeDepoimento(n) {
+          showDepoimento(currentIndex += n);
+        }
+      
+        // Exibe o primeiro depoimento ao carregar a página
+        showDepoimento(currentIndex);
+      </script>
       
   <div class="jogo">
     <h2>English Travel Game</h2>
