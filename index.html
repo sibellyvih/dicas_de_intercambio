@@ -43,13 +43,13 @@
         <button class="botao">Experiências Inesquecíveis</button>
         <button class="botao">Visão Global</button>
       </div>
-      
       <br>
-      <p>No entanto, é importante lembrar que o intercâmbio também pode ser desafiador. Você pode enfrentar dificuldades com o idioma, sentir saudades de casa, lidar com choque cultural e enfrentar obstáculos inesperados. No entanto, esses desafios também fazem parte do processo de crescimento e amadurecimento.</p>
-     
-        <img src="airplane.gif" alt="gif de um avião">
       
-      </div>
+      <p>No entanto, é importante lembrar que o intercâmbio também pode ser desafiador. Você pode enfrentar dificuldades com o idioma, sentir saudades de casa, lidar com choque cultural e enfrentar obstáculos inesperados. No entanto, esses desafios também fazem parte do processo de crescimento e amadurecimento.</p>
+    
+      <img src="airplane.gif" alt="gif de um avião">
+      <br>
+    </div>
     </main>
 
     <style>
@@ -75,8 +75,9 @@
     </style>
 
        <div class="depoimentos">
+        <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>
       <h2>Depoimentos</h2>
-      <blockquote>
+      <blockquote class="active">
         <div class="content">
         <figure>
         <img class="depoimento_img" src="Dilmar.jpeg" alt="Intercâmbista Dilmar no Canadá">
@@ -119,8 +120,7 @@
       </div>
         <footer class="name">Sibelly Vitória Antonio</footer>
       </blockquote>
-      <div class="carousel-controls" onclick="changeDepoimento(-1)">&#10094;</div>
-      <div class="carousel-controls" onclick="changeDepoimento(1)">&#10095;</div>
+      <div class="carousel-controls right" onclick="changeDepoimento(1)">&#10095;</div>
       </div>
 
       <script>
