@@ -57,6 +57,13 @@ h1 {
     }
   }
 
+  img {
+    max-width: 500px;
+    max-height: 450px;
+    margin: auto;
+    display: block;
+  }
+  
  main p {
     padding: 40px 0;
   }
