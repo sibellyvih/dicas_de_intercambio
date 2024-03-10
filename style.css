@@ -6,6 +6,15 @@ body {
     background: white;
   }
   
+  .container {
+    height: 200vh; /* Garante que há espaço para rolar */
+  }
+  
+  .content-efeito {
+    opacity: 0; /* Inicialmente, o conteúdo está invisível */
+    transition: opacity 1s ease; /* Adiciona uma transição suave */
+  }
+
   header {
     color: black;
     background: white;
@@ -83,17 +92,25 @@ body {
 
   .botao {
     font-size: 20px;
-    color: black;
-   background-color: #8EC5FC;
-   border-color:#8EC5FC;
-   border-radius: 10px;
+    background-image: linear-gradient(to right, #8EC5FC 0%, #A7BFE8  51%, #6190E8  100%);
+    margin: 10px;
+    padding: 5px 5px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border: white;
   }
 
   .botao:hover {
-    background-color: #83b6e9;
+    background-position: right center; /* change the direction of the change here */
+    color: black;
+    text-decoration: none;
   }
-
+ 
   main p {
+    color: black;
     font-size: 18px;
     text-align: center;
     padding: 0px;
