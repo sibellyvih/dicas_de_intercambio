@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+  }
+
+header {
+    color: black;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+
+ nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(138, 59, 125);
+    text-decoration: underline;
+  }
+  
+
+h1 {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-50px); /* Posição inicial acima */
+    animation: titleEntrance 1s forwards; /* Animação de entrada */
+  }
+
+  /* Animação de entrada */
+  @keyframes titleEntrance {
+    to {
+      opacity: 1; /* Torna o título visível */
+      transform: translateY(0); /* Retorna à posição original */
+    }
+  }
+
+ h2 {
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+ }
+
+  iframe {
+    padding: 20px 10px;
+    margin: auto;
+    display: block;
+  }
