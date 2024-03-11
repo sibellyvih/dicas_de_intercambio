@@ -62,10 +62,11 @@ h1 {
     max-height: 450px;
     margin: auto;
     display: block;
+    padding: 20px;
   }
   
  main p {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
  main ul {
@@ -84,10 +85,38 @@ h1 {
   }
 
   .topics {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
    }
   
+  .botoes {
+    text-align: center;
+  }
+
+  .botao {
+    font-size: 18px;
+    background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+    margin: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:white;            
+    border-radius: 10px;
+    border-bottom: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .botao:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: white;
+    text-decoration: none;
+  }
+
+  .botao a {
+    text-decoration: none;
+    color: white;
+  }
+
    .rodape {
     font-size: 18px;
     padding: 40px 0;
