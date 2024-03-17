@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: white;
+  }
+
+header {
+    color: black;
+    background: white;
+    padding: 20px 0;
+}
+
+h1 {
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(-50px); /* Posição inicial acima */
+  animation: titleEntrance 1s forwards; /* Animação de entrada */
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(138, 59, 125);
+    text-decoration: underline;
+  }
+
+.titulo-principal {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    color: white;
+    padding: 60px;
+}
+
+.titulo-principal h1{
+    text-align: center;
+    font-size: 50px;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-50px); /* Posição inicial acima */
+    animation: titleEntrance 1s forwards; /* Animação de entrada */
+  }
+
+  /* Animação de entrada */
+  @keyframes titleEntrance {
+    to {
+      opacity: 1; /* Torna o título visível */
+      transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+p {
+    padding: 20px;
+}
+
+.img-inicio {
+    max-width: 350px;
+    height: auto;
+}
+
+.apresentacao {
+    font-size: 20px;
+    padding: 100px;
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    gap: 40px; /* Espaçamento entre texto e imagem */
+}
+
+.rodape {
+    font-size: 18px;
+    padding: 40px 0;
+    text-align: center;
+    background: rgb(50, 48, 96);
+    color: white;
+  }
+
+.rodape img {
+    max-height: 40px; /* Ajuste a altura da imagem */
+  }
+  
+.rodape .redes-sociais {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    margin: 0 20px;
+  }
+
+  .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+    padding: 10px;
+  }
