@@ -194,77 +194,12 @@ text-align: right;
 padding: 5px;
 }
 
-.objetivos-principais {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.objetivo-titulo {
-  text-align: left;
-  width: 100%;
-  font-size: 32px;
-}
-
-.objetivos-principais span {
-  color: rgb(226,21,57);
-}
-
-.topico {
-  font-family: "Crakra Petch", sans-serif;
-  background-color: #3F51B5;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  font-size: 18px;
-  align-items: center;
-  width: 100%;
-  border-bottom: 4px solid; 
-  border-left: 2px solid; 
-  border-right: 2px solid; 
-  border-top: none;
-}
-
-.topico:first-child {
-  border-radius: 40px 40px 0 0;
-}
-
-@media screen and (min-width: 768px) {
-  .topicos {
-      display: flex;
-  }
-
-  .topico:first-child {
-      border-radius: 40px 0 0 0;
-  }
-
-  .topico:last-child {
-      border-radius: 0 40px 0 0;
-  }
-}
-
-
-.topicos {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .topicos {
-      display: flex;
-  }
-
-
 .jogo {
   text-align: center;
 }
 
 .jogo p {
- font-size: 20px;
+  font-size: 20px;
   padding: 20px;
 }
 
@@ -291,5 +226,4 @@ padding: 5px;
   font-size: 13px;
   margin: 20px 0 0;
   padding: 10px;
-}
 }
