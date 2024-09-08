@@ -170,9 +170,9 @@ footer {
 
  .depoimentos {
   font-size: 18px;
+  padding: 10px;
   color: white;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
 }
 
 .content {
