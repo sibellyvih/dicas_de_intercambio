@@ -133,12 +133,12 @@ main p {
 
 .carousel-controls.left {
   left: 10px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .carousel-controls.right {
   right: 10px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .carousel-controls:hover {
