@@ -1,187 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recet.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <title>Dicas de intercâmbio</title>
-     </head>
-    <body>
-      <header>
-        <div class="caixa">
-          <h1>Bem-vindos</h1>
-        <nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+  <title>Dicas de intercâmbio</title>
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1>Bem-vindos</h1>
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="prepare-se.html">Prepare-se</a></li>
           <li><a href="destinos.html">Destinos</a></li>
           <li><a href="sobre.html">Sobre mim</a></li>
         </ul>
-        </nav>
-        </div>
-      </header>
-   
-    <div class="titulo-principal">
-      <h1>DICAS DE INTERCÂMBIO</h1>
-        <p class="subtitulo">Este site irá te ajudar a se planejar para um intercâmbio com algumas dicas. Se você vai fazer ou ainda está na dúvida fique ligados nessas dicas.</p>
+      </nav>
     </div>
 
-    <div class="container">
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
+
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="animar.js"></script>
+
+  <div class="titulo-principal">
+    <h1>DICAS DE INTERCÂMBIO</h1>
+    <p class="subtitulo">Este site irá te ajudar a se planejar para um intercâmbio com algumas dicas. Se você vai fazer
+      ou ainda está na dúvida fique ligados nessas dicas.</p>
+  </div>
+
+  <div class="container">
 
     <main>
       <div class="beneficios">
-      <h2>Os benefícios em fazer um intercâmbio</h2>
-      <p>Fazer intercâmbio é uma experiência enriquecedora que envolve viver em um país estrangeiro por um período determinado, geralmente com o objetivo de estudar, trabalhar, aprender um novo idioma ou simplesmente mergulhar em uma cultura diferente. Essa experiência oferece uma série de benefícios pessoais, acadêmicos e profissionais. </p>
-      <br>
-     
+        <h2 class="titulo">Os benefícios em fazer um intercâmbio</h2>
+        <p>Fazer intercâmbio é uma experiência enriquecedora que envolve viver em um país estrangeiro por um período
+          determinado, geralmente com o objetivo de estudar, trabalhar, aprender um novo idioma ou simplesmente
+          mergulhar em uma cultura diferente. Essa experiência oferece uma série de benefícios pessoais, acadêmicos e
+          profissionais. </p>
+        <br>
+
         <div class="botoes">
-        <button class="botao">Aprendizado de Idiomas</button>
-        <button class="botao">Experiência Cultural</button>
-        <button class="botao">Desenvolvimento Pessoal</button>
-        <button class="botao">Crescimento da Autoconfiança</button>
-        <button class="botao">Experiências Inesquecíveis</button>
-        <button class="botao">Visão Global</button>
+          <button class="botao">Aprendizado de Idiomas</button>
+          <button class="botao">Experiência Cultural</button>
+          <button class="botao">Desenvolvimento Pessoal</button>
+          <button class="botao">Crescimento da Autoconfiança</button>
+          <button class="botao">Experiências Inesquecíveis</button>
+          <button class="botao">Visão Global</button>
+        </div>
+        <br>
+
+        <p>No entanto, é importante lembrar que o intercâmbio também pode ser desafiador. Você pode enfrentar
+          dificuldades com o idioma, sentir saudades de casa, lidar com choque cultural e enfrentar obstáculos
+          inesperados. No entanto, esses desafios também fazem parte do processo de crescimento e amadurecimento.</p>
+
+        <figure>
+        <img class="gif" src="airplane.gif" alt="gif de um avião">
+        <figcaption>Fonte: Gifer.</figcaption>
+      </figure>
+        <br>
       </div>
-      <br>
-      
-      <p>No entanto, é importante lembrar que o intercâmbio também pode ser desafiador. Você pode enfrentar dificuldades com o idioma, sentir saudades de casa, lidar com choque cultural e enfrentar obstáculos inesperados. No entanto, esses desafios também fazem parte do processo de crescimento e amadurecimento.</p>
-    
-      <img src="airplane.gif" alt="gif de um avião">
-      <br>
-    </div>
     </main>
 
-       <div class="depoimentos">
-        <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>
+    <div class="depoimentos">
+      <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>
       <h2>Depoimentos</h2>
       <blockquote class="active">
         <div class="content">
-        <figure>
-        <img class="depoimentos_img" src="Dilmar.jpeg" alt="Intercâmbista Dilmar no Canadá">
-        <figcaption>Canadá</figcaption>
-      </figure>
-        <p><em>"A experiência de conhecer o Canadá e viajar por ele é unica, um país completamente diferente geograficamente, com outra cultura, culinária e língua."</em></p>
+          <figure>
+            <img class="depoimentos_img" src="Dilmar.jpeg" alt="Intercâmbista Dilmar no Canadá">
+            <figcaption>Canadá</figcaption>
+          </figure>
+          <p><em>"A experiência de conhecer o Canadá e viajar por ele é unica, um país completamente diferente geograficamente, com outra cultura, culinária e língua."</em></p>
         </div>
         <footer class="name">Dilmar Castanheiro</footer>
-        </blockquote>
+      </blockquote>
 
       <blockquote>
         <div class="content">
-        <figure>
-        <img class="depoimentos_img" src="Gustavo.jpeg" alt="Intercâmbista Gustavo na Nova Zelândia">
-        <figcaption>Nova Zelândia</figcaption>
-      </figure>
-        <p><em>"Fazer um intercâmbio na Nova Zelândia é uma experiência incrível e enriquecedora. É uma oportunidade de mergulhar em uma cultura vibrante, conhecer uma ampla variedade de paisagens deslumbrantes e fazer amizades duradouras. Aprimorar um novo idioma em um ambiente imersivo e explorar as diversas atividades ao ar livre (com muita adrenalina) são apenas alguns dos aspectos emocionantes dessa aventura."</em></p>
-      </div>
+          <figure>
+            <img class="depoimentos_img" src="Gustavo.jpeg" alt="Intercâmbista Gustavo na Nova Zelândia">
+            <figcaption>Nova Zelândia</figcaption>
+          </figure>
+          <p><em>"Fazer um intercâmbio na Nova Zelândia é uma experiência incrível e enriquecedora. É uma oportunidade
+              de mergulhar em uma cultura vibrante, conhecer uma ampla variedade de paisagens deslumbrantes e fazer
+              amizades duradouras. Aprimorar um novo idioma em um ambiente imersivo e explorar as diversas atividades ao
+              ar livre (com muita adrenalina) são apenas alguns dos aspectos emocionantes dessa aventura."</em></p>
+        </div>
         <footer class="name">Gustavo Lopes</footer>
-        </blockquote>
-      
+      </blockquote>
+
       <blockquote>
         <div class="content">
-        <figure>
-        <img class="depoimentos_img" src="Isabel.jpeg" alt="Intercâmbista Isabel na Nova Zelândia">
-        <figcaption>Nova Zelândia e Índia</figcaption>
-      </figure>
-        <p><em>"O intercâmbio foi a coisa mais inesperado da minha vida. Nunca imaginei que um dia poderia viver tanto em tão pouco. O intercâmbio te tira completamente da sua zona de conforto, você meio que perde o seu senso de direção, mas isso é absurdamente incrível pois com o passar dos dias, semanas, meses e até anos, você percebe que ali é o seu novo lar, sua nova vida e aquelas pessoas que inicialmente eram estranhas, se tornam tudo pra você, se tornam sua família. Parte de você vai ficar pra sempre naquele lugar. É uma experiência rica e indescritível (gostei tanto que fui pra outro) 😅🥰. Eu gostaria que todo mundo, pelo menos uma vez na vida, tivesse a oportunidade de vivenciar tudo isso!"</em></p>
-      </div>
+          <figure>
+            <img class="depoimentos_img" src="Isabel.jpeg" alt="Intercâmbista Isabel na Nova Zelândia">
+            <figcaption>Nova Zelândia e Índia</figcaption>
+          </figure>
+          <p><em>"O intercâmbio foi a coisa mais inesperado da minha vida. Nunca imaginei que um dia poderia viver tanto
+              em tão pouco. O intercâmbio te tira completamente da sua zona de conforto, você meio que perde o seu senso
+              de direção, mas isso é absurdamente incrível pois com o passar dos dias, semanas, meses e até anos, você
+              percebe que ali é o seu novo lar, sua nova vida e aquelas pessoas que inicialmente eram estranhas, se
+              tornam tudo pra você, se tornam sua família. Parte de você vai ficar pra sempre naquele lugar. É uma
+              experiência rica e indescritível (gostei tanto que fui pra outro) 😅🥰. Eu gostaria que todo mundo, pelo
+              menos uma vez na vida, tivesse a oportunidade de vivenciar tudo isso!"</em></p>
+        </div>
         <footer class="name">Isabel Garcia</footer>
       </blockquote>
 
       <blockquote>
         <div class="content">
-        <figure>
-        <img class="depoimentos_img" src="Otavio.jpeg" alt="Intercâmbista Otávio no Canadá">
-        <figcaption>Canadá</figcaption>
-      </figure>
-        <p><em>"Durante seis meses, tive a oportunidade de viver em outro país e mergulhar em uma cultura completamente nova: a canadense. Estudei em uma escola católica na cidade de Red Deer, onde minha família anfitriã era colombiana. Por meio do programa Ganhando o Mundo, realizei meu sonho de ver a neve e participei de diversas atividades que sempre desejei, como praticar snowboarding em uma montanha e acampar com amigos. Essas experiências ficarão gravadas na minha memória com muito carinho e saudade."</em></p>
+          <figure>
+            <img class="depoimentos_img" src="Otavio.jpeg" alt="Intercâmbista Otávio no Canadá">
+            <figcaption>Canadá</figcaption>
+          </figure>
+          <p><em>"Durante seis meses, tive a oportunidade de viver em outro país e mergulhar em uma cultura
+              completamente nova: a canadense. Estudei em uma escola católica na cidade de Red Deer, onde minha família
+              anfitriã era colombiana. Por meio do programa Ganhando o Mundo, realizei meu sonho de ver a neve e
+              participei de diversas atividades que sempre desejei, como praticar snowboarding em uma montanha e acampar
+              com amigos. Essas experiências ficarão gravadas na minha memória com muito carinho e saudade."</em></p>
         </div>
         <footer class="name">Otávio Moraes da Costa</footer>
-        </blockquote>
+      </blockquote>
 
       <blockquote>
         <div class="content">
           <figure>
-        <img class="depoimentos_img" src="Pedro.jpeg" alt="Intercâmbista Pedro na Austrália">
-        <figcaption>Austrália</figcaption>
-      </figure>
-        <p><em>"Conhecer a Austrália sem dúvida foi inesquecível, vivi mais em 6 meses lá do que 16 anos no Brasil, país totalmente diferente com paisagens deslumbrantes, praias magníficas e uma diversidade cultural que me encantou. Aprendi muito durante o meu intercâmbio, tanto academicamente quanto pessoalmente."</em></p>
-      </div>
+            <img class="depoimentos_img" src="Pedro.jpeg" alt="Intercâmbista Pedro na Austrália">
+            <figcaption>Austrália</figcaption>
+          </figure>
+          <p><em>"Conhecer a Austrália sem dúvida foi inesquecível, vivi mais em 6 meses lá do que 16 anos no Brasil,
+              país totalmente diferente com paisagens deslumbrantes, praias magníficas e uma diversidade cultural que me
+              encantou. Aprendi muito durante o meu intercâmbio, tanto academicamente quanto pessoalmente."</em></p>
+        </div>
         <footer class="name">Pedro Barbieri</footer>
       </blockquote>
 
       <blockquote>
         <div class="content">
           <figure>
-        <img class="depoimentos_img" src="Ronaldo.jpeg" alt="Intercâmbista Ronanaldo na Austrália">
-        <figcaption>Austrália</figcaption>
-      </figure>
-        <p><em>"Durante meus seis meses em Hobart, Tasmânia, tive uma experiência intensa e enriquecedora, tanto nos estudos quanto na vida cultural. Onde no Elizabeth College, o ambiente era acolhedor e as aulas interativas, o que me ajudou a me adaptar rapidamente. O contato com outras culturas foi incrível, e o respeito dos australianos pelas diferenças me marcou muito. Participei do Hobart Chess Club, onde fiz amizades e me conectei ainda mais com a comunidade local. Nos meus tempos livres, explorei as paisagens naturais da região, que complementaram perfeitamente minha vivência intercultural e pessoal."</em></p>
-      </div>
+            <img class="depoimentos_img" src="Ronaldo.jpeg" alt="Intercâmbista Ronanaldo na Austrália">
+            <figcaption>Austrália</figcaption>
+          </figure>
+          <p><em>"Durante meus seis meses em Hobart, Tasmânia, tive uma experiência intensa e enriquecedora, tanto nos
+              estudos quanto na vida cultural. Onde no Elizabeth College, o ambiente era acolhedor e as aulas
+              interativas, o que me ajudou a me adaptar rapidamente. O contato com outras culturas foi incrível, e o
+              respeito dos australianos pelas diferenças me marcou muito. Participei do Hobart Chess Club, onde fiz
+              amizades e me conectei ainda mais com a comunidade local. Nos meus tempos livres, explorei as paisagens
+              naturais da região, que complementaram perfeitamente minha vivência intercultural e pessoal."</em></p>
+        </div>
         <footer class="name">Ronaldo de O. Burgos</footer>
       </blockquote>
-          
+
       <blockquote>
         <div class="content">
           <figure>
-        <img class="depoimentos_img" src="Sibelly_.jpeg" alt="Intercâmbista Sibelly na Nova Zelândia">
-        <figcaption>Nova Zelândia</figcaption>
-      </figure>
-        <p><em>"Realmente é incrível fazer um intercâmbio! Ganhamos conhecimento e aprendemos ser mais independentes, além conhecer pessoas e lugares novos pelo mundo. O meu intercâmbio foi uma das melhores experiências da minha vida."</em></p>
-      </div>
+            <img class="depoimentos_img" src="Sibelly_.jpeg" alt="Intercâmbista Sibelly na Nova Zelândia">
+            <figcaption>Nova Zelândia</figcaption>
+          </figure>
+          <p><em>"Realmente é incrível fazer um intercâmbio! Ganhamos conhecimento e aprendemos ser mais independentes,
+              além conhecer pessoas e lugares novos pelo mundo. O meu intercâmbio foi uma das melhores experiências da
+              minha vida."</em></p>
+        </div>
         <footer class="name">Sibelly Vitória Antonio</footer>
       </blockquote>
       <div class="carousel-controls right" onclick="changeDepoimento(1)">&#10095;</div>
-      </div>
+    </div>
 
-      <script>
-        let currentIndex = 0;
-        const depoimentos = document.querySelectorAll('.depoimentos blockquote');
-      
-        function showDepoimento(index) {
-          // Certifique-se de que o índice não ultrapasse os limites
-          if (index < 0) {
-            currentIndex = depoimentos.length - 1;
-          } else if (index >= depoimentos.length) {
-            currentIndex = 0;
-          }
-      
-          // Oculta todos os depoimentos
-          depoimentos.forEach(dep => dep.classList.remove('active'));
-      
-          // Exibe apenas o depoimento com o índice atual
-          depoimentos[currentIndex].classList.add('active');
-        }
-      
-        function changeDepoimento(n) {
-          showDepoimento(currentIndex += n);
-        }
-      
-        // Exibe o primeiro depoimento ao carregar a página
-        showDepoimento(currentIndex);
-      </script>
-      
-  <div class="jogo">
-    <h2>English Travel Game</h2>
-   <iframe src="https://scratch.mit.edu/projects/867681896/embed" allowtransparency="true" width="800" height="490" frameborder="0" scrolling="no" allowfullscreen></iframe>
-   <p>Jogo criado com o intuito de ajudar pessoas que vão viajar, e pouca convivência com a lingua inglesa, um jogo educativo e interativo para auxiliar estudantes e demais usuários que gostariam de realizar um intercâmbio de estudos ou realizar alguma viagem e que não tenham um bom domínio na língua inglesa para aprender e aprimorar o vocabulário e aprender com situações reais por meio o jogo.</p>
- </div>
+    <script>
+      let currentIndex = 0;
+      const depoimentos = document.querySelectorAll('.depoimentos blockquote');
 
-      <footer class="rodape">
-        <h2><strong>Dicas de Intercâmbio<br>
+      function showDepoimento(index) {
+        // Certifique-se de que o índice não ultrapasse os limites
+        if (index < 0) {
+          currentIndex = depoimentos.length - 1;
+        } else if (index >= depoimentos.length) {
+          currentIndex = 0;
+        }
+
+        // Oculta todos os depoimentos
+        depoimentos.forEach(dep => dep.classList.remove('active'));
+
+        // Exibe apenas o depoimento com o índice atual
+        depoimentos[currentIndex].classList.add('active');
+      }
+
+      function changeDepoimento(n) {
+        showDepoimento(currentIndex += n);
+      }
+
+      // Exibe o primeiro depoimento ao carregar a página
+      showDepoimento(currentIndex);
+    </script>
+
+    <div class="jogo">
+      <h2>English Travel Game</h2>
+      <iframe class="jogo" src="https://scratch.mit.edu/projects/867681896/embed" allowtransparency="true" width="800" height="490"
+        frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <p>Jogo criado com o intuito de ajudar pessoas que vão viajar, e pouca convivência com a lingua inglesa, um jogo
+        educativo e interativo para auxiliar estudantes e demais usuários que gostariam de realizar um intercâmbio de
+        estudos ou realizar alguma viagem e que não tenham um bom domínio na língua inglesa para aprender e aprimorar o
+        vocabulário e aprender com situações reais por meio o jogo.</p>
+    </div>
+
+    <footer class="rodape">
+      <h2><strong>Dicas de Intercâmbio<br>
           by Sibelly</strong></h2>
-        <p>Siga as minhas redes sociais para saber mais sobre intercâmbios</p>
-        <div class="redes-sociais">
-          <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-          <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
-          <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+      <p>Siga as minhas redes sociais para saber mais sobre intercâmbios</p>
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img src="facebook.png"
+            alt="Facebook"></a>
+        <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+        <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img src="youtube.png" alt="YouTube"></a>
       </div>
-         <p class="copyright">&copy; Copyright Dicas de intercâmbio - 2023</p>
-        </footer>
+      <p class="copyright">&copy; Copyright Dicas de intercâmbio - 2023</p>
+    </footer>
 
-       </body>
-      </html>
+</body>
+
+</html>

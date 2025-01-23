@@ -42,18 +42,23 @@ nav a:hover {
 }
 
 h1 {
-    opacity: 0; /* Inicialmente invisível */
-    transform: translateY(-50px); /* Posição inicial acima */
-    animation: titleEntrance 1s forwards; /* Animação de entrada */
-  }
-
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
   /* Animação de entrada */
-  @keyframes titleEntrance {
-    to {
-      opacity: 1; /* Torna o título visível */
-      transform: translateY(0); /* Retorna à posição original */
-    }
+}
+
+/* Animação de entrada */
+@keyframes titleEntrance {
+  to {
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
   }
+}
 
 h2 {
   text-align: center;
@@ -70,11 +75,18 @@ h2 {
   text-align: center;
 }
 
+.titulo-principal h1 {
+  text-shadow: rgb(63, 121, 238) 1px 0 10px;
+}
+
 .subtitulo {
- font-size: 18px;
- opacity: 0; /* Inicialmente invisível */
-    transform: translateY(-50px); /* Posição inicial acima */
-    animation: titleEntrance 1s forwards; /* Animação de entrada */
+  font-size: 18px;
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 .botoes {
@@ -83,19 +95,20 @@ h2 {
 
 .botao {
   font-size: 20px;
-  background-image: linear-gradient(to right, #8EC5FC 0%, #A7BFE8  51%, #6190E8  100%);
+  background-image: linear-gradient(to right, #8EC5FC 0%, #A7BFE8 51%, #6190E8 100%);
   margin: 10px;
   padding: 5px 5px;
   transition: 0.5s;
   background-size: 200% auto;
-  color: black;            
+  color: black;
   box-shadow: 0 0 10px #eee;
   border-radius: 10px;
   border: white;
 }
 
 .botao:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
+  /* change the direction of the change here */
   color: black;
   text-decoration: none;
 }
@@ -108,10 +121,11 @@ main p {
 }
 
 .depoimentos {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
-  position: relative; /* Adicionado para posicionar as setas */
+  position: relative;
+  /* Adicionado para posicionar as setas */
 }
 
 .depoimentos blockquote {
@@ -133,17 +147,19 @@ main p {
 
 .carousel-controls.left {
   left: 10px;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .carousel-controls.right {
   right: 10px;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .carousel-controls:hover {
-  transform: translateY(-50%) scale(1.2); /* Ajuste o valor de escala conforme necessário */
-  font-size: 28px; /* Ajuste o tamanho da fonte conforme necessário */
+  transform: translateY(-50%) scale(1.2);
+  /* Ajuste o valor de escala conforme necessário */
+  font-size: 28px;
+  /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 img {
@@ -154,31 +170,34 @@ img {
 }
 
 figcaption {
-font: italic smaller sans-serif;
-padding: 0px;
-text-align: center;
-font-size: 18px;
+  font: italic smaller sans-serif;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
 }
 
 blockquote {
-padding: 5px;
+  padding: 5px;
+  flex-wrap: wrap;
 }
 
 footer {
   padding: 0px;
 }
 
- .depoimentos {
+.depoimentos {
   font-size: 18px;
   padding: 10px;
   color: white;
-  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
 }
 
 .content {
   display: flex;
-  align-items: center; /* Alinhar verticalmente */
-  gap: 20px; /* Espaçamento entre texto e imagem */
+  align-items: center;
+  /* Alinhar verticalmente */
+  gap: 20px;
+  /* Espaçamento entre texto e imagem */
 }
 
 .depoimentos_img {
@@ -189,9 +208,9 @@ footer {
 }
 
 .name {
-font-size: 23px;
-text-align: right;
-padding: 5px;
+  font-size: 23px;
+  text-align: right;
+  padding: 5px;
 }
 
 .jogo {
@@ -212,12 +231,14 @@ padding: 5px;
 }
 
 .rodape img {
-  max-height: 40px; /* Ajuste a altura da imagem */
+  max-height: 40px;
+  /* Ajuste a altura da imagem */
 }
 
 .rodape .redes-sociais {
   display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
+  justify-content: center;
+  /* Centralizar horizontalmente */
   margin: 0 20px;
 }
 
@@ -226,4 +247,150 @@ padding: 5px;
   font-size: 13px;
   margin: 20px 0 0;
   padding: 10px;
+}
+
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+  background-color: rgba(17, 0, 91, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.caixa-mobile nav a {
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+  background-color: rgb(134, 134, 0);
+}
+
+#botao-menu {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid rgba(17, 0, 91, 0.711);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
+}
+
+
+.linha {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(17, 0, 91, 0.711);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+#botao-menu.ativar {
+  border: 5px solid red;
+}
+
+#botao-menu.ativar .linha:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2) {
+  width: 0;
+}
+
+.titulo {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* MENU */
+  .caixa {
+    display: none;
+  }
+
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 50px);
+  }
+
+  #botao-menu {
+    display: block;
+  }
+
+  .caixa-mobile nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  /* TITULO PRINCIPAL*/
+
+  .titulo-principal {
+    width: 100%;
+  }
+
+  .titulo-principal h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  /* IMAGENS E GIF */
+  .gif {
+    width: 70%;
+  }
+
+  .depoimentos_img {
+    width: 100%;
+  }
+
+  /* BENEFÍCIOS */
+
+  .botao {
+    font-size: 16px;
+  }
+
+  /* DEPOIMENTOS */
+
+  .depoimentos {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  blockquote .content {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  /* JOGO */
+  .jogo {
+    width: 90%;
+    padding: 20px;
+  }
+
 }
