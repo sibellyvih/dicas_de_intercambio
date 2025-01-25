@@ -171,3 +171,129 @@ font-size: 60px;
   margin: 20px 0 0;
   padding: 10px;
 }
+
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+background-color: rgba(17, 0, 91, 0.711);
+backdrop-filter: blur(10px);
+position: absolute;
+top: 70px;
+left: 0px;
+width: 100%;
+height: 0;
+z-index: 10;
+visibility: hidden;
+transition: 0.5s;
+overflow: hidden;
+}
+
+.caixa-mobile nav a {
+color: white;
+display: block;
+padding: 20px 30px;
+width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+background-color: rgb(134, 134, 0);
+}
+
+#botao-menu {
+background: transparent;
+width: 50px;
+height: 50px;
+outline: none;
+cursor: pointer;
+border: 5px solid rgba(17, 0, 91, 0.711);
+border-radius: 2px;
+transition: 0.2s;
+display: none;
+}
+
+
+.linha {
+position: relative;
+width: 20px;
+height: 3px;
+background-color: rgba(17, 0, 91, 0.711);
+display: block;
+margin: 5px auto;
+transform-origin: center;
+transition: 0.2s;
+}
+
+#botao-menu.ativar {
+border: 5px solid red;
+}
+
+#botao-menu.ativar .linha:nth-child(1) {
+transform: translateY(8px) rotate(-45deg);
+background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3) {
+transform: translateY(-8px) rotate(45deg);
+background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2) {
+width: 0;
+}
+
+.titulo, .direita, .esquerda, .efeito-na-imagem1{
+visibility: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* MENU */
+  .caixa {
+    display: none;
+  }
+
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 50px);
+  }
+
+  #botao-menu {
+    display: block;
+  }
+
+  .caixa-mobile nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+ /* TITULO PRINCIPAL*/
+
+.titulo-principal h1 {
+  font-size: 25px;
+}
+
+.diario h2 {
+  font-size: 30px;
+}
+
+.diario a {
+  font-size: 20px;
+}
+
+/* COLUNAS */
+.apresentacao {
+  flex-direction: column;
+}
+
+.Depoimentos {
+  flex-direction: column;
+}
+
+.Depoimentos-instagram {
+  display: block;
+}
+
+.img-inicio {
+  width: 150%;
+}
+}
