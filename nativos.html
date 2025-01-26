@@ -1,24 +1,59 @@
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title> Fale com nativos - Prepare-se</title>
-        <link rel="stylesheet" href="recet.css">
-        <link rel="stylesheet" href="musica.css">
-    </head>
-    <body>
-        <header>
-          <div class="caixa">
-              <h1>Fale com nativos</h1>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="prepare-se.html">Prepare-se</a></li>
-                  <li><a href="destinos.html">Destinos</a></li>
-                </ul>
-              </nav>
-          </div>
-          </header>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QRULM9U5QXw?si=xvI8SZ233lhHItNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fale com nativos - Prepare-se</title>
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="nativos.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+</head>
 
-    </body>
+<body>
+  <header>
+    <div class="caixa">
+      <h1>Fale com nativos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
+
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="animar.js"></script>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QRULM9U5QXw?si=xvI8SZ233lhHItNU"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+</body>

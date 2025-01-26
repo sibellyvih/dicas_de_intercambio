@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   color: black;
   background: white;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 header {
@@ -13,9 +19,16 @@ header {
 }
 
 h1 {
-opacity: 0; /* Inicialmente invisível */
-transform: translateY(-50px); /* Posição inicial acima */
-animation: titleEntrance 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 .caixa {
@@ -54,19 +67,24 @@ nav a:hover {
   padding: 60px;
 }
 
-.titulo-principal h1{
+.titulo-principal h1 {
   text-align: center;
-  font-size: 50px;
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateY(-50px); /* Posição inicial acima */
-  animation: titleEntrance 1s forwards; /* Animação de entrada */
+  font-size: 35px;
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 /* Animação de entrada */
 @keyframes titleEntrance {
   to {
-    opacity: 1; /* Torna o título visível */
-    transform: translateY(0); /* Retorna à posição original */
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
   }
 }
 
@@ -83,85 +101,109 @@ p {
   font-size: 20px;
   padding: 100px;
   display: flex;
-  align-items: center; /* Alinhar verticalmente */
-  gap: 40px; /* Espaçamento entre texto e imagem */
+  align-items: center;
+  /* Alinhar verticalmente */
+  gap: 40px;
+  /* Espaçamento entre texto e imagem */
+}
+
+.apresentacao p {
+  text-indent: 1em;
+  text-align: justify;
 }
 
 .imagens img {
-max-width: 450px;
-max-height: 400px;
+  max-width: 450px;
+  max-height: 400px;
 }
 
 .imagens h1 {
-color: #ffffff;
-padding: 20px;
-font-size: 30px;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 30px;
 }
 
 figcaption {
-padding: 10px;
-font-style: italic;
-color: white;
-font-size: 18px;
+  padding: 10px;
+  font-style: italic;
+  color: white;
+  font-size: 18px;
 }
 
 .Depoimentos {
-color:white;
-padding: 20px;
-text-align: center;
-background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .Depoimentos-instagram {
-display: flex;
-justify-content: center; /* Centraliza horizontalmente */
-align-items: center; /* Centraliza verticalmente, se necessário */
-margin: 20px 0; /* Adiciona margem para separar da borda da página */
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente, se necessário */
+  margin: 20px 0;
+  /* Adiciona margem para separar da borda da página */
 }
 
 .diario {
-background-image:url(NZ\ flag.png);
-background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-background-position: center; /* Centraliza a imagem */
-color: white; /* Define a cor do texto */
-text-align: center; /* Centraliza o texto */
-padding: 50px; /* Adiciona espaço ao redor do texto */
-height: 400px; /* Define a altura da div */
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-font-family: "Merriweather", serif;
-font-weight: 600;
-font-style: normal;
+  background-image: url(NZ\ flag.png);
+  background-size: cover;
+  /* Ajusta a imagem para cobrir toda a div */
+  background-position: center;
+  /* Centraliza a imagem */
+  color: white;
+  /* Define a cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 50px;
+  /* Adiciona espaço ao redor do texto */
+  height: 400px;
+  /* Define a altura da div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .diario a {
-font-size: 25px;
-color: white;
+  font-size: 25px;
+  color: white;
 }
 
 .diario h2 {
-font-size: 60px;
+  font-size: 60px;
 }
 
 .rodape {
-  font-size: 18px;
   padding: 40px 0;
   text-align: center;
   background: rgb(50, 48, 96);
   color: white;
 }
 
+.rodape h2 {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .rodape img {
-  max-height: 40px; /* Ajuste a altura da imagem */
+  max-height: 40px;
+  /* Ajuste a altura da imagem */
 }
 
 .rodape .redes-sociais {
   display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
+  justify-content: center;
+  /* Centralizar horizontalmente */
   margin: 0 20px;
 }
 
@@ -174,74 +216,92 @@ font-size: 60px;
 
 /* ESTILIZAÇÃO DO MENU-MOBILE */
 .caixa-mobile {
-background-color: rgba(17, 0, 91, 0.711);
-backdrop-filter: blur(10px);
-position: absolute;
-top: 70px;
-left: 0px;
-width: 100%;
-height: 0;
-z-index: 10;
-visibility: hidden;
-transition: 0.5s;
-overflow: hidden;
+  background-color: rgba(17, 0, 91, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .caixa-mobile nav a {
-color: white;
-display: block;
-padding: 20px 30px;
-width: 100%;
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
 }
 
 .caixa-mobile nav a:hover {
-background-color: rgb(134, 134, 0);
+  background-color: rgb(134, 134, 0);
 }
 
 #botao-menu {
-background: transparent;
-width: 50px;
-height: 50px;
-outline: none;
-cursor: pointer;
-border: 5px solid rgba(17, 0, 91, 0.711);
-border-radius: 2px;
-transition: 0.2s;
-display: none;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid rgba(17, 0, 91, 0.711);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
 }
 
 
 .linha {
-position: relative;
-width: 20px;
-height: 3px;
-background-color: rgba(17, 0, 91, 0.711);
-display: block;
-margin: 5px auto;
-transform-origin: center;
-transition: 0.2s;
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(17, 0, 91, 0.711);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
 }
 
 #botao-menu.ativar {
-border: 5px solid red;
+  border: 5px solid red;
 }
 
 #botao-menu.ativar .linha:nth-child(1) {
-transform: translateY(8px) rotate(-45deg);
-background-color: red;
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
 }
 
 #botao-menu.ativar .linha:nth-child(3) {
-transform: translateY(-8px) rotate(45deg);
-background-color: red;
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
 }
 
 #botao-menu.ativar .linha:nth-child(2) {
-width: 0;
+  width: 0;
 }
 
-.titulo, .direita, .esquerda, .efeito-na-imagem1{
-visibility: hidden;
+.titulo,
+.direita,
+.esquerda,
+.efeito-na-imagem1 {
+  visibility: hidden;
+}
+
+.esquerda {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -266,34 +326,49 @@ visibility: hidden;
     left: 0;
   }
 
- /* TITULO PRINCIPAL*/
+  /* TITULO PRINCIPAL*/
 
-.titulo-principal h1 {
-  font-size: 25px;
-}
+  .titulo-principal h1 {
+    font-size: 23px;
+  }
 
-.diario h2 {
-  font-size: 30px;
-}
+  .diario h2 {
+    font-size: 30px;
+  }
 
-.diario a {
-  font-size: 20px;
-}
+  .diario a {
+    font-size: 20px;
+  }
 
-/* COLUNAS */
-.apresentacao {
-  flex-direction: column;
-}
+  /* COLUNAS */
+  .apresentacao {
+    flex-direction: column;
+  }
 
-.Depoimentos {
-  flex-direction: column;
-}
+  .Depoimentos {
+    flex-direction: column;
+  }
 
-.Depoimentos-instagram {
-  display: block;
-}
+  .Depoimentos-instagram {
+    display: block;
+  }
 
-.img-inicio {
-  width: 150%;
-}
+  .img-inicio {
+    width: 150%;
+  }
+
+  .apresentacao p {
+    margin: 0 0;
+    padding: 0%;
+    font-size: 18px;
+  }
+
+  /* RODAPÉ */
+  .rodape h2 {
+    font-size: 22px;
+  }
+
+  .rodape {
+    font-size: 16px;
+  }
 }

@@ -1,143 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: black;
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-  }
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
 
 header {
-    color: black;
-    background-color: white;
-    padding: 20px 0;
+  color: black;
+  background-color: white;
+  padding: 20px 0;
 }
 
 .caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-  }
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
 
 nav {
-    position: absolute;
-    top: 0px;
-    right: 0;
-  }
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
 
 nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-  }
-  
-  nav a {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-  }
+  display: inline;
+  margin: 0 0 0 15px;
+}
 
-  nav a:hover {
-    color: rgb(138, 59, 125);
-    text-decoration: underline;
-  }
-  
+nav a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(138, 59, 125);
+  text-decoration: underline;
+}
 
 h1 {
-    opacity: 0; /* Inicialmente invisível */
-    transform: translateY(-50px); /* Posição inicial acima */
-    animation: titleEntrance 1s forwards; /* Animação de entrada */
-  }
-
+  opacity: 0;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
   /* Animação de entrada */
-  @keyframes titleEntrance {
-    to {
-      opacity: 1; /* Torna o título visível */
-      transform: translateY(0); /* Retorna à posição original */
-    }
+}
+
+/* Animação de entrada */
+@keyframes titleEntrance {
+  to {
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
+}
+
+img {
+  max-width: 500px;
+  max-height: 450px;
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  padding: 20px 0;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+main li {
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding: 40px;
+}
+
+main li:last-child {
+  border-bottom: 1px solid white;
+}
+
+.topics {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.botoes {
+  text-align: center;
+}
+
+.botao {
+  font-size: 18px;
+  background-image: linear-gradient(to right, #614385 0%, #516395 51%, #614385 100%);
+  margin: 10px;
+  padding: 5px 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border-bottom: #FFFFFF;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.botao:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: white;
+  text-decoration: none;
+}
+
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+
+.rodape {
+  padding: 40px 0;
+  text-align: center;
+  background: rgb(50, 48, 96);
+  color: white;
+}
+
+.rodape h2 {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rodape img {
+  max-height: 40px;
+  /* Ajuste a altura da imagem */
+}
+
+.rodape .redes-sociais {
+  display: flex;
+  justify-content: center;
+  /* Centralizar horizontalmente */
+  margin: 0 20px;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+  padding: 10px;
+}
+
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+  background-color: rgba(17, 0, 91, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.caixa-mobile nav a {
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+  background-color: rgb(134, 134, 0);
+}
+
+#botao-menu {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid rgba(17, 0, 91, 0.711);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
+}
+
+.linha {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(17, 0, 91, 0.711);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+#botao-menu.ativar {
+  border: 5px solid red;
+}
+
+#botao-menu.ativar .linha:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2) {
+  width: 0;
+}
+
+.titulo,
+.direita,
+.esquerda,
+.efeito-na-imagem1 {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* MENU */
+  .caixa {
+    display: none;
   }
 
-  img {
-    max-width: 500px;
-    max-height: 450px;
-    margin: auto;
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 50px);
+  }
+
+  #botao-menu {
     display: block;
-    padding: 20px;
-  }
-  
- main p {
-    padding: 20px 0;
   }
 
- main ul {
-    list-style-type: none;
-    padding: 10px;
+  .caixa-mobile nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
   }
 
- main li {
-    font-size: 18px;
-    border-bottom: 1px solid white;
-    padding: 40px;
-  }
-  
- main li:last-child {
-    border-bottom: 1px solid white;
-  }
-
-  .topics {
-    font-size: 18px;
-    padding: 20px;
-   }
-  
-  .botoes {
+  /* TÍTULOS */
+  h1 {
     text-align: center;
+    font-size: 23px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  /* TÓPICOS */
+  .topics p {
+    font-size: 16px;
+  }
+
+  .topics img {
+    width: 90%;
   }
 
   .botao {
     font-size: 18px;
-    background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
-    margin: 10px;
-    padding: 5px 10px;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color:white;            
-    border-radius: 10px;
-    border-bottom: #FFFFFF;
-    text-decoration: none;
   }
 
-  .botao:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: white;
-    text-decoration: none;
+  /* RODAPÉ */
+
+  .rodape h2 {
+    font-size: 22px;
   }
 
-  .botao a {
-    text-decoration: none;
-    color: white;
+  .rodape {
+    font-size: 16px;
   }
-
-   .rodape {
-    font-size: 18px;
-    padding: 40px 0;
-    text-align: center;
-    background: rgb(50, 48, 96);
-    color: white;
-  }
-  
-  .rodape img {
-    max-height: 40px; /* Ajuste a altura da imagem */
-  }
-  
-  .rodape .redes-sociais {
-    display: flex;
-    justify-content: center; /* Centralizar horizontalmente */
-    margin: 0 20px;
-  }
-  
-  .copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px 0 0;
-    padding: 10px;
-  }
+}

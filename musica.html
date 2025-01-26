@@ -1,46 +1,96 @@
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Escute músicas em inglês - Prepare-se</title>
-        <link rel="stylesheet" href="recet.css">
-        <link rel="stylesheet" href="musica.css">
-    </head>
-    <body>
-        <header>
-          <div class="caixa">
-              <h1>Escute músicas em inglês</h1>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="prepare-se.html">Prepare-se</a></li>
-                  <li><a href="destinos.html">Destinos</a></li>
-                </ul>
-              </nav>
-          </div>
-          </header>
 
-          <h2>Músicas que recomendo:</h2>
-        
-        <div class="musicas">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escute músicas em inglês - Prepare-se</title>
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="musica.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+</head>
 
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4N5s8lPTsjI9EGP7K4SXzB?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <br>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6TvxPS4fj4LUdjw2es4g21?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <br>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<body>
+  <header>
+    <div class="caixa">
+      <h1>Escute músicas em inglês</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
 
-        </div>
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
 
-          <h2>Artistas</h2>
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="artistas">
+  <script src="animar.js"></script>
 
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0LcJLqbBmaGUft1e9Mm8HV?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <br>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4gzpq5DPGxSnKTe4SA8HAU?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <br>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6eUKZXaKkcviH0Ku9w2n3V?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   
-        </div>
-   
-    </body>
+  <h2>Músicas que recomendo:</h2>
+
+  <div class="musicas">
+
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/4N5s8lPTsjI9EGP7K4SXzB?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/6TvxPS4fj4LUdjw2es4g21?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  </div>
+
+  <h2>Artistas</h2>
+
+  <div class="artistas">
+
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/0LcJLqbBmaGUft1e9Mm8HV?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/4gzpq5DPGxSnKTe4SA8HAU?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/6eUKZXaKkcviH0Ku9w2n3V?utm_source=generator" width="50%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  </div>
+
+</body>

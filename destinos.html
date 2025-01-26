@@ -1,103 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Destinos - Dicas de intercâmbio</title>
-        <link rel="stylesheet" href="recet.css">
-        <link rel="stylesheet" href="destinos.css">
-    </head>
-    <body>
-        <header>
-            <div class="caixa">
-              <h1>Destinos populares</h1>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="prepare-se.html">Prepare-se</a></li>
-                  <li><a href="destinos.html">Destinos</a></li>
-                  <li><a href="sobre.html">Sobre mim</a></li>
-                </ul>
-              </nav>
-              </div>
-          </header>
 
-    <main>      
-          <h2>Os destinos mais populares</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="destinos.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+  <title>Destinos - Dicas de intercâmbio</title>
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1>Popular destinations</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
+
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prepare-se.html">Prepare-se</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="animar.js"></script>
+
+  <main>
+    <h1>Os destinos mais populares</h1>
     <ul>
       <li class="destino">
         <h3>Austrália</h3>
-      <figure>
-      <img src="Australia.jpg" alt="Imagem da cidade de Sydney na Australia">
-        <figcaption>Sydney, Austrália</figcaption>
-      </figure>
-      <p>A qualidade de vida é um dos motivos que mais chama atenção para quem se pergunta se um intercâmbio na Austrália vale a pena. Nesse sentido, é importante saber que o país tem um elevado Índice de Desenvolvimento Humano (IDH), ficando em sexto lugar no ranking de IDH da Organização das Nações Unidas (ONU) em 2019.</p>
-      <p>A Austrália é um país incrivelmente vasto e diversificado localizado na região da Oceania. É o único país que ocupa um continente inteiro, oferecendo uma paisagem que varia desde desertos áridos até florestas tropicais luxuriantes e praias de areia branca.
+        <figure>
+          <img src="Australia.jpg" alt="Imagem da cidade de Sydney na Australia">
+          <figcaption>Sydney, Austrália</figcaption>
+        </figure>
+        <p>A qualidade de vida é um dos motivos que mais chama atenção para quem se pergunta se um intercâmbio na
+          Austrália vale a pena. Nesse sentido, é importante saber que o país tem um elevado Índice de Desenvolvimento
+          Humano (IDH), ficando em sexto lugar no ranking de IDH da Organização das Nações Unidas (ONU) em 2019.</p>
+        <p>A Austrália é um país incrivelmente vasto e diversificado localizado na região da Oceania. É o único país que
+          ocupa um continente inteiro, oferecendo uma paisagem que varia desde desertos áridos até florestas tropicais
+          luxuriantes e praias de areia branca.
 
-      <p>A cultura australiana é uma mistura fascinante de influências indígenas e culturas de imigrantes de todo o mundo. Os aborígenes australianos têm uma história que se estende por milênios, com tradições culturais e espirituais profundas que desempenham um papel significativo na identidade australiana. Além disso, devido à sua política de imigração diversificada, o país abriga pessoas de uma ampla variedade de origens étnicas, o que se reflete em sua culinária, música, arte e tradições.</p>
-        
-      <p>A língua oficial é o inglês, com algumas peculiaridades linguísticas que são exclusivas da Austrália. Os australianos são conhecidos por seu espírito descontraído e amigável, e eles têm um forte senso de comunidade.</p>
-        
-        A Austrália possui uma economia robusta, impulsionada por setores como mineração, agricultura, educação e tecnologia. O país é um dos principais exportadores de minerais, como ferro, ouro e carvão, e é um destino popular para estudantes internacionais que buscam uma educação de alta qualidade.
-        
-       <p Em termos de clima, a Austrália varia de norte a sul, com regiões tropicais no norte e climas temperados no sul. O país é conhecido por seu clima ensolarado e é um destino de sonho para os amantes da praia e entusiastas de esportes ao ar livre. Os esportes desempenham um papel importante na cultura australiana, com atividades como críquete, rúgbi, futebol australiano e surfe sendo muito populares.
-        
-       <p>A Austrália é também famosa por sua vida selvagem única, com uma série de espécies nativas que não são encontradas em nenhum outro lugar do mundo. Animais icônicos, como cangurus, coalas, ornitorrincos e crocodilos, fazem parte da rica biodiversidade do país.</p>
-      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/PdVLk_dPmtc?si=LTy4oG9xFeTZycSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+        <p>A cultura australiana é uma mistura fascinante de influências indígenas e culturas de imigrantes de todo o
+          mundo. Os aborígenes australianos têm uma história que se estende por milênios, com tradições culturais e
+          espirituais profundas que desempenham um papel significativo na identidade australiana. Além disso, devido à
+          sua política de imigração diversificada, o país abriga pessoas de uma ampla variedade de origens étnicas, o
+          que se reflete em sua culinária, música, arte e tradições.</p>
+
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/PdVLk_dPmtc?si=LTy4oG9xFeTZycSQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></center>
       </li>
-      
+
       <li class="destino">
         <h3>Canadá</h3>
-      <figure>
-      <img src="Canada.jpg" alt="Imagem da cidade de Toronto no Canadá">
-        <figcaption>Toronto, Canadá</figcaption>
-      </figure>
-      <p>O Canadá é um país imenso, com boas oportunidades e condições para os estudantes que desejam aprender inglês e francês, idiomas oficiais de lá, sendo o francês ainda mais utilizado nas cidades de Montreal e Quebec. Mas esses são apenas alguns dos pontos positivos de fazer intercâmbio no Canadá.</p>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/BHdIQy00_p4?si=AEBEiaV1aPEMFLT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-    </li>
-      
-    <li class="destino">
-      <h3>Estados Unidos</h3>
-      <figure>
-      <img src="EUA.jpg" alt="Imagem da cidade de Nova Iorque nos Estados Unidos">
-        <figcaption>Nova Iorque, Estados Unidos</figcaption>
-      </figure>
-      <p>Um dos destinos mais cobiçados para intercâmbio é, sem dúvidas, os Estados Unidos. Como a língua inglesa é uma das mais faladas no mundo, nada melhor que aprender o idioma com pessoas nativas. Os EUA é um país de primeiro mundo, com uma ótima infraestrutura e diversas possibilidades.</p>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/b7FNvq11CEw?si=n6LAnGLDfVxVVN0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-    </li>
-      
-    <li class="destino">
-      <h3>Inglaterra</h3>
-      <figure>
-      <img src="Inglaterra.jpg" alt="Imagem da cidade de Londres na Inglaterra">
-        <figcaption>Londres, Inglaterra</figcaption>
-      </figure>
-      <p>A experiência de estudar em território britânico é transformadora para qualquer pessoa, que além da imersão na língua inglesa, tem a possibilidade de conhecer outra cultura.</p>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/wSHXd-K-jIk?si=6bLxOeLcXbvog7P6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-    </li>
-      
-    <li class="destino">
-      <h3>Nova Zelândia</h3>
-      <figure>
-      <img src="Nova_Zelandia.jpg" alt="Imagem da cidade de Auckland na Nova Zelândia">
-        <figcaption>Auckland, Nova Zelândia</figcaption>
-      </figure>
-      <p>A segurança é tão eficaz que a 14ª edição do Índice Global da Paz classificou a Nova Zelândia como o segundo País mais pacífico do mundo em uma lista com mais de 160 participantes. Portanto, se você está buscando a segurança como prioridade, o intercâmbio na Nova Zelândia é uma alternativa a ser considerada.</p>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/EdKDIph5IaM?si=eGgYN018tKZ4PkGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-    </li>
+        <figure>
+          <img src="Canada.jpg" alt="Imagem da cidade de Toronto no Canadá">
+          <figcaption>Toronto, Canadá</figcaption>
+        </figure>
+        <p>O Canadá é um país imenso, com boas oportunidades e condições para os estudantes que desejam aprender inglês
+          e francês, idiomas oficiais de lá, sendo o francês ainda mais utilizado nas cidades de Montreal e Quebec. Mas
+          esses são apenas alguns dos pontos positivos de fazer intercâmbio no Canadá.</p>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/BHdIQy00_p4?si=AEBEiaV1aPEMFLT0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></center>
+      </li>
+
+      <li class="destino">
+        <h3>Estados Unidos</h3>
+        <figure>
+          <img src="EUA.jpg" alt="Imagem da cidade de Nova Iorque nos Estados Unidos">
+          <figcaption>Nova Iorque, Estados Unidos</figcaption>
+        </figure>
+        <p>Um dos destinos mais cobiçados para intercâmbio é, sem dúvidas, os Estados Unidos. Como a língua inglesa é
+          uma das mais faladas no mundo, nada melhor que aprender o idioma com pessoas nativas. Os EUA é um país de
+          primeiro mundo, com uma ótima infraestrutura e diversas possibilidades.</p>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/b7FNvq11CEw?si=n6LAnGLDfVxVVN0Y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></center>
+      </li>
+
+      <li class="destino">
+        <h3>Inglaterra</h3>
+        <figure>
+          <img src="Inglaterra.jpg" alt="Imagem da cidade de Londres na Inglaterra">
+          <figcaption>Londres, Inglaterra</figcaption>
+        </figure>
+        <p>A experiência de estudar em território britânico é transformadora para qualquer pessoa, que além da imersão
+          na língua inglesa, tem a possibilidade de conhecer outra cultura.</p>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/wSHXd-K-jIk?si=6bLxOeLcXbvog7P6"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></center>
+      </li>
+
+      <li class="destino">
+        <h3>Nova Zelândia</h3>
+        <figure>
+          <img src="Nova_Zelandia.jpg" alt="Imagem da cidade de Auckland na Nova Zelândia">
+          <figcaption>Auckland, Nova Zelândia</figcaption>
+        </figure>
+        <p>A segurança é tão eficaz que a 14ª edição do Índice Global da Paz classificou a Nova Zelândia como o segundo
+          País mais pacífico do mundo em uma lista com mais de 160 participantes. Portanto, se você está buscando a
+          segurança como prioridade, o intercâmbio na Nova Zelândia é uma alternativa a ser considerada.</p>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/EdKDIph5IaM?si=eGgYN018tKZ4PkGz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></center>
+      </li>
     </ul>
   </main>
 
-    <footer class="rodape">
-      <h2><strong>Dicas de Intercâmbio<br>
+  <footer class="rodape">
+    <h2><strong>Dicas de Intercâmbio<br>
         by Sibelly</strong></h2>
-      <p>Siga as minhas redes sociais para saber mais sobre intercâmbios</p>
-      <div class="redes-sociais">
-        <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-        <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
-        <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+    <p>Siga as minhas redes sociais para saber mais sobre intercâmbios</p>
+    <div class="redes-sociais">
+      <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img src="facebook.png"
+          alt="Facebook"></a>
+      <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+      <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img src="youtube.png" alt="YouTube"></a>
     </div>
-       <p class="copyright">&copy; Copyright Dicas de intercâmbio - 2023</p>
-      </footer>
-    </body>
+    <p class="copyright">&copy; Copyright Dicas de intercâmbio - 2023</p>
+  </footer>
+</body>
+
 </html>
