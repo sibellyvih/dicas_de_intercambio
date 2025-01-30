@@ -121,6 +121,8 @@ main h1 {
 
 main p {
   padding: 40px 0;
+  text-indent: 10px;
+  text-align: justify;
 }
 
 main ul {
@@ -161,6 +163,7 @@ main li:last-child {
   justify-content: center;
   /* Centralizar horizontalmente */
   margin: 0 20px;
+  gap: 20px;
 }
 
 .copyright {

@@ -85,6 +85,8 @@ main h1 {
 
 main p {
   padding: 10px 0;
+  text-indent: 10px;
+  text-align: justify;
 }
 
 main ul {

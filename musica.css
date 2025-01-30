@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   margin: 0;
   padding: 0;
   color: black;
-  background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+  background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
 }
 
 header {
@@ -43,21 +49,30 @@ nav a:hover {
 
 
 h1 {
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateY(-50px); /* Posição inicial acima */
-  animation: titleEntrance 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 /* Animação de entrada */
 @keyframes titleEntrance {
   to {
-    opacity: 1; /* Torna o título visível */
-    transform: translateY(0); /* Retorna à posição original */
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
   }
 }
 
 h2 {
-  color:white;
+  color: white;
   text-align: center;
   padding: 10px;
   font-size: 25px;
@@ -71,74 +86,77 @@ iframe {
 
 /* ESTILIZAÇÃO DO MENU-MOBILE */
 .caixa-mobile {
-background-color: rgba(17, 0, 91, 0.711);
-backdrop-filter: blur(10px);
-position: absolute;
-top: 70px;
-left: 0px;
-width: 100%;
-height: 0;
-z-index: 10;
-visibility: hidden;
-transition: 0.5s;
-overflow: hidden;
+  background-color: rgba(17, 0, 91, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .caixa-mobile nav a {
-color: white;
-display: block;
-padding: 20px 30px;
-width: 100%;
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
 }
 
 .caixa-mobile nav a:hover {
-background-color: rgb(134, 134, 0);
+  background-color: rgb(134, 134, 0);
 }
 
 #botao-menu {
-background: transparent;
-width: 50px;
-height: 50px;
-outline: none;
-cursor: pointer;
-border: 5px solid rgba(17, 0, 91, 0.711);
-border-radius: 2px;
-transition: 0.2s;
-display: none;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid rgba(17, 0, 91, 0.711);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
 }
 
 
 .linha {
-position: relative;
-width: 20px;
-height: 3px;
-background-color: rgba(17, 0, 91, 0.711);
-display: block;
-margin: 5px auto;
-transform-origin: center;
-transition: 0.2s;
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(17, 0, 91, 0.711);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
 }
 
 #botao-menu.ativar {
-border: 5px solid red;
+  border: 5px solid red;
 }
 
 #botao-menu.ativar .linha:nth-child(1) {
-transform: translateY(8px) rotate(-45deg);
-background-color: red;
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
 }
 
 #botao-menu.ativar .linha:nth-child(3) {
-transform: translateY(-8px) rotate(45deg);
-background-color: red;
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
 }
 
 #botao-menu.ativar .linha:nth-child(2) {
-width: 0;
+  width: 0;
 }
 
-.titulo, .direita, .esquerda, .efeito-na-imagem1{
-visibility: hidden;
+.titulo,
+.direita,
+.esquerda,
+.efeito-na-imagem1 {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 1020px) {
@@ -162,4 +180,4 @@ visibility: hidden;
     top: 20px;
     left: 0;
   }
-}  
+}
