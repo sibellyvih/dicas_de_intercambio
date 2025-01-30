@@ -252,6 +252,7 @@ footer {
   justify-content: center;
   /* Centralizar horizontalmente */
   margin: 0 20px;
+  gap: 20px;
 }
 
 .copyright {
@@ -298,7 +299,6 @@ footer {
   transition: 0.2s;
   display: none;
 }
-
 
 .linha {
   position: relative;
