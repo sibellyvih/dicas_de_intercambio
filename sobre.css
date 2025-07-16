@@ -150,7 +150,7 @@ figcaption {
 }
 
 .diario {
-  background-image: url(NZ\ flag.png);
+  background-image: url(fotos/NZ\ flag.png);
   background-size: cover;
   /* Ajusta a imagem para cobrir toda a div */
   background-position: center;
